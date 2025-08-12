@@ -27,11 +27,12 @@
 --text-10:0.625rem;
 --text-8:0.5rem;
 }
+html, body { overflow-x: hidden; }
 
 body{
   font-family: "IBM Plex Sans", sans-serif;
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: minmax(0, 1fr); 
   margin: 0;
   font-size: var(--text-16);
  /* border: 1px solid red ;*/
@@ -42,9 +43,16 @@ body{
     width: 100%; 
     max-width: 100%;
 }
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+header, main, footer {
+  min-width: 0;   /* מאפשר להצטמצם בתוך ה־viewport */
+}
 main {
-  grid-area: main;  
   display: grid;
+    grid-template-columns: minmax(0, 1fr); 
   grid-template-areas:
     "hero"
     "intro"
@@ -84,6 +92,7 @@ header{
     display: flex;
     align-items: center;
     font-weight: 600;
+    flex-wrap: wrap; max-width: 100%; 
 }
   .logo span.square_black{
     color: var(--deep-black);
@@ -95,6 +104,7 @@ header{
     letter-spacing: 0.028rem;
     font-weight: 500;
     text-transform: uppercase;
+      white-space: nowrap;
 }
 /* nav cv download and project naviftion in site */
 nav.nav_site{
@@ -219,7 +229,7 @@ margin-bottom: 1.32rem;
 .skill {
   grid-area:skill;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
    align-items: stretch; 
 }
@@ -251,7 +261,7 @@ margin-bottom: 1.32rem;
 }
 
 /* projects section */
-.project {
+.projects {
     grid-area: projects;
 }
 .project a{ /*project grid design araea for each project*/
@@ -264,7 +274,7 @@ margin-bottom: 1.32rem;
   column-gap: 2rem;
   align-items: center;
   padding:5.6vh 0 4.8vh;
-
+ min-width: 0; 
 }
 .projects article {
     padding: 0;
@@ -559,13 +569,14 @@ background-color: var(--primary-blue);
     color: var(--primary-blue);
 background-color: var(--light-blue-bg);
 }
-
+.project_page header p{
+  margin: 4.2vh 0 0;
+}
 .project_page header a.project_link{
 color: var(--mid-blue);
 font-size: var(--text-12);
 text-decoration: underline;
 text-transform: uppercase;
-    margin: 4.2vh 0 0;
 }
 .project_page .short_description h2{
     font-size: var(--text-48);
@@ -661,8 +672,27 @@ line-height: 1.32;
 header {
     margin: 4.2vh 2vw;
 }
+.logo{    
+    font-size: 6.2vh;
+}
+.logo span.square_black {
+    font-size: 22%;
+}
+nav.nav_projects{
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+}
+ 
+.show {
+    display: flex;
+  }
+.hide{
+    display: none;
+} 
 .hero h1 {
     margin: 8.2vh 0 6.2vh;
+  
 }
 .intro{
         grid-template-columns: 1fr;
@@ -677,14 +707,14 @@ header {
 .hero h2 :nth-child(2 of .text_square){
   border: none;
 }
+.exp header a {
+    font-size: var(--text-16);
+}
 .exp > header {
     margin: 4.2vh 0;
     padding: 0;
 }
 
-.exp > header a {
-    font-size: var(--text-16);
-}
   .projects-header {
     display: grid;
     grid-template-columns: 1fr;      
@@ -736,13 +766,38 @@ color: var(--shutdown-blue);
         max-width: 92%;
 }
  dl{
-        max-width: 100%;
+   max-width: 100%;
+   margin-inline-start: 0.6vw;
+}
+/*PROJECT PAGE*/
+main.project_page > article > header {
+    margin-top: 0;
+        margin-bottom: 8vh;
+}
+.project_page header h1{
+       margin: 8vh 0 6.2vh; 
+}
+
+.project_page .short_description h2 {
+  font-size: var(--text-32);
+        line-height: 1.58;
+    margin: 0 0 8.6vh;
+}
+.project_page  dt{
+    font-size: var(--text-18);
+}
+.project_page dd{
+font-size: var(--text-22);
+}
+.project_page .finish_line p{
+            font-size: var(--text-26);
+        line-height: 1.62;
 }
 }
 
 @media (max-width: 480px) { 
 header {
-  margin: 8.2vh 4vw;
+  margin: 6.2vh 4vw;
   }
 .hero,
 .intro,
@@ -752,38 +807,127 @@ header {
 .exp.design {
   padding: 0 6.2vw;
 }
-.hero h1 {
-    margin: 12.2vh 0 ;
+section{
+        margin-bottom: 16.6vh;
+}
+header{
+    flex-wrap: wrap;
+}
+.logo{
+        font-size: 4.8vh;
+}
+.logo span.square_black {
+    padding: 0.18rem 0.14rem;
     }
+.hero h1 {
+margin: 10.2vh 0 8.2vh;
+      font-size: var(--text-32);
+    }
+ .hero h2 {
+    font-size: var(--text-24);
+ }   
 .hero_btn {
     margin-top: 6.2vh;
 }
 .hero_btn a {
     margin-right: 4.2vw;
+    font-size: var(--text-16);
 }
-section{
-        margin-bottom: 22vh;
+.intro_text h2 {
+    font-size: var(--text-32);
+}
+.intro_text p {
+    font-size: var(--text-18);
+    line-height: 142%;
+}
+.skill {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 2.4rem;
 }
 .skill_tool h3 {
-    font-size: var(--text-26);
-}.skill_tool li {
+        font-size: var(--text-22);
+}
+.skill_tool li {
     font-size: var(--text-22);
     line-height: 1.52;
 }
-
+.project a{
+    grid-template-columns: minmax(0, 1fr);
+grid-template-areas:
+  "title"
+  "tools"
+  "desc"
+  "preview";
+}
 .project a p {
-        font-size: var(--text-22);
+        font-size: var(--text-18);
         line-height: 1.48;
  }
 .project a header h3 {
     font-size: var(--text-26);
      }
 .project .tools li {
-   font-size: var(--text-18);
+   font-size: var(--text-14);
    padding: 0.38rem 0.62rem;
    font-weight: 500;
    letter-spacing: 1px;
      }
-
-
+.exp header a{
+        margin-top: 1.2vh;
+}
+     .exp h2 {
+    font-size: var(--text-22);
+    line-height: 134%;
+     }
+     .exp h4 {
+    font-size: var(--text-24);
+    margin-bottom: 2.8vh;
+    line-height: 1.32;
+     }
+.exp li {
+    font-size: var(--text-18);
+    line-height: 1.42;
+}
+.exp.design h4 {
+    margin: 2.4vh 0vh;
+}
+dt{
+    font-size: var(--text-12);
+    font-weight: 500;
+            line-height: 2.4;
+    padding-inline-start: 0.6em; 
+}
+dd{
+  font-size: var(--text-18);
+}
+footer .logo {
+    font-size: 3.8vh;
+}
+/*PROJECT PAGE*/
+.project_page ul {
+    margin: 1vh 0;
+ }
+     .project_page .short_description h2 {
+        font-size: var(--text-18);
+        line-height: 1.48;
+    }
+        .project_page dt {
+        font-size: var(--text-10);
+        }
+            .project_page dd {
+        font-size: var(--text-16);
+        margin-top: 1.8vh;
+        margin-bottom: 5.4vh;
+                    line-height: 1.68;
+            }
+            .visuals img {
+    max-height: 10.8rem;
+            }
+            figcaption {
+    font-size: var(--text-12);
+            }
+                .project_page .finish_line p {
+        font-size: var(--text-16);
+        line-height: 1.62;
+                }
 }
