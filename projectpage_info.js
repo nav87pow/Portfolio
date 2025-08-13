@@ -1,15 +1,14 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-  const pid = new URL(location.href).searchParams.get('project'); // url for the chosen project
+  const pid = new URL(location.href).searchParams.get('project'); // // url for the chosen project
   if (!pid) return;
 
   fetch('./project.json', { cache: 'no-store' }) //get the jason file and check if there is data +clean cache 
     .then(res => {
-      if (!res.ok) throw new Error('Failed to load projects.json');
+      if (!res.ok) throw new Error('Failed to load project.json'); 
       return res.json();
     })
 
-    //r the url and the project the same 
+   //r the url and the project the same 
     .then(data => {
       const project = (data.projects || []).find(p => p.id === pid);
       if (!project) {
@@ -146,38 +145,49 @@ document.addEventListener('DOMContentLoaded', () => {
               addedContent = true;
             });
           } else if (v.type === 'type') {
-            // if the font exists show if an image show the img 
-            const hasName = !!(v.font_name && String(v.font_name).trim() !== '');
-            const isImage = (v.source === 'image' && v.image);
-            const hasTextSample = !!(v.sample_text && String(v.sample_text).trim() !== '');
+            const fonts = Array.isArray(v.fonts) && v.fonts.length ? v.fonts : [v];
 
-            if (hasName || isImage || hasTextSample || v.font_family) {
-              // font_name
-              if (hasName) {
-                const name = document.createElement('div');
-                name.className = 'font_name';
-                name.textContent = v.font_name;
-                holder.appendChild(name);
-              }
+            fonts.forEach(f => {
+              const hasName = !!(f.font_name && String(f.font_name).trim() !== '');
+              const isImageMode = (f.mode === 'image') || (f.source === 'image');
+              const imageSrc = f.image_src || f.image || '';
+              const hasTextSample = !!(f.sample_text && String(f.sample_text).trim() !== '');
 
-              // font_example
-              const sample = document.createElement('div');
-              sample.className = 'font_example';
-
-              if (isImage) {
-                sample.innerHTML = `<img src="${v.image}" alt="${v.font_name || 'font sample'}">`;
-              } else {
-                sample.textContent = v.sample_text || 'Aa Bb Cc אבג';
-                if (v.font_family) {
-                  sample.style.fontFamily = v.font_family; // מוחל רק על הדוגמה
-                } else {
-                  sample.style.removeProperty('font-family');
+              if (hasName || isImageMode || hasTextSample || f.font_family) {
+                // font_name
+                if (hasName) {
+                  const name = document.createElement('div');
+                  name.className = 'font_name';
+                  name.textContent = f.font_name;
+                  holder.appendChild(name);
                 }
-              }
 
-              holder.appendChild(sample);
-              addedContent = true;
-            }
+                // font_example
+                const sample = document.createElement('div');
+                sample.className = 'font_example';
+
+                if (isImageMode && imageSrc) {
+                  const img = document.createElement('img');
+                  img.src = imageSrc;
+                  img.alt = f.image_alt || f.font_name || 'font sample';
+                  sample.replaceChildren(img);
+                } else {
+                  sample.textContent = f.sample_text || 'Aa Bb Cc אבג';
+                  if (f.font_family) {
+                    sample.style.fontFamily = f.font_family; // apply only on the sample
+                  } else {
+                    sample.style.removeProperty('font-family');
+                  }
+
+                  if (f.source === 'google' && f.font_name) {
+                    ensureGoogleFont(f.font_name);
+                  }
+                }
+
+                holder.appendChild(sample);
+                addedContent = true;
+              }
+            });
           }
 
           // if there aren't any don't show at all
@@ -199,3 +209,20 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => console.error(err));
 });
+
+
+// Helper: load Google Fonts on demand (when v.fonts[i].source === "google")
+function ensureGoogleFont(fontName) {
+  const id = 'gf-' + fontName.replace(/\s+/g, '-').toLowerCase();
+  if (document.getElementById(id)) return;
+
+  const href = 'https://fonts.googleapis.com/css2?family=' +
+               encodeURIComponent(fontName).replace(/%20/g, '+') +
+               ':wght@400;500;600;700&display=swap';
+
+  const link = document.createElement('link');
+  link.id = id;
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+}

@@ -74,15 +74,22 @@
             { "name": "Energy Orange", "hex": "#FF9B24", "text": "#000000", "outline": "#000000" }
           ]
         },
-        {
-          "type": "type",
-          "figcaption": "typography",
-          "font_name": "Inter",
-          "sample_text": "The quick brown fox jumps over the lazy dog — אבגדהוזחט",
-          "source": "google",
-          "font_family": "Inter, sans-serif",
-          "image": ""
-        },
+        
+         {
+  "type": "type",
+  "figcaption": "typography",
+  "fonts": [
+    {
+      "font_name": "Noto Sans Hebrew",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Noto Sans Hebrew', sans-serif",
+      
+      "sample_text": "שירותי התקנה ותחזוקה מצלמות אבטחה",
+      "note": ""                      
+    }
+  ]
+},
         {
           "type": "web_img",
           "figcaption": "website",
@@ -101,9 +108,9 @@
     },
         {
       "id": "rune",
-      "slug": "rune",
-      "title": "rune",
-      "nav_title": "rune",
+      "slug": "Rune",
+      "title": "Rune",
+      "nav_title": "Rune",
 
       "home": {
         "show": true,
@@ -158,15 +165,40 @@
             { "name": "Deep mystical ", "hex": "#2e3442", "text": "#FFFFFF", "outline": "" }
           ]
         },
-       {
+        {
   "type": "type",
   "figcaption": "typography",
-  "font_name": "Space Grotesk",
-  "sample_text": "Quick brown fox jumps..ᚠᚢᚦᚨᚱᚲ",
-  "source": "google",
-  "font_family": "'Space Grotesk', sans-serif",
-  "image": ""
+  "fonts": [
+    {
+      "font_name": "Space Grotesk",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Space Grotesk', sans-serif",
+      
+      "sample_text": "Rune-drawing experience..ᚠᚢᚦᚨᚱᚲ",
+      "note": ""                      
+    },
+        {
+      "font_name": "Noto Sans Runic",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Noto Sans Runic', sans-serif",
+      
+      "sample_text": "ᚠᚢᚦᚨᚱᚲ",
+      "note": ""                      
+    },
+           {
+      "font_name": "Libre Franklin",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Libre Franklin', sans-serif",
+      
+      "sample_text": "Simulates traditional rune-drawing",
+      "note": ""                      
+    }
+  ]
 },
+
         {
           "type": "web_img",
           "figcaption": "website",
@@ -182,6 +214,205 @@
   "og_title": "Interactive Rune Reading App",
   "og_type": "website"
       }
+    },
+    {
+      "id": "Event",
+      "slug": "Event",
+      "title": "Event",
+      "nav_title": "Event",
+
+      "home": {
+        "show": true,
+        "order": 3,
+        "tools": ["HTML", "CSS","JavaScript"],
+        "summary": "A responsive one-page event invitation built with HTML, CSS, and JavaScript. Features an infinite scrolling text ticker, event timeline, and quick navigation links (Waze & Google Maps). ",
+        "preview": {
+          "src": "./src/event/preview_event.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      },
+
+      "links": {
+        "site": "https://eventinvit.netlify.app/",
+        "repo": "",
+        "figma": ""
+      },
+
+      "dev_tools": ["HTML", "CSS","JavaScript"],
+      "design_tools": ["Photoshop", "Illustrator", "Design Language"],
+
+      "short_description": {
+        "heading": "A responsive one-page event invitation built with HTML, CSS, and JavaScript. Features an infinite scrolling text ticker, event timeline, and quick navigation links (Waze & Google Maps). The visual style adds a unique twist, combining vibrant colors and custom display type to reflect both Rosh Hashanah and housewarming themes.",
+        "role": "Designer & Front-End Developer — responsive layout, custom graffiti-style typography, and animated text ticker.",
+        "challenge": "Blending two themes — Rosh Hashanah and a housewarming — into a bold, hip visual identity. Developed a seamless infinite text loop using SVG assets while ensuring responsive performance across devices."
+      },
+
+      "process_solution": [
+        {
+          "title": "Design Language",
+          "text": "Bold and playful —  vivid green and fun purple, layered over a granite texture. The look conveys energy and festivity while keeping the layout structured."
+        },
+        {
+          "title": "Typography",
+          "text": "Custom graffiti-style display type for event titles and numbers, hand-crafted and refined in Illustrator. Paired with a clean sans-serif for body text to maintain legibility."
+        },
+        {
+          "title": "Visual Assets",
+          "text": "Photoshop-edited centerpiece visuals — a stylized fish and apple — integrated into the layout to tie in the Rosh Hashanah theme."
+        },
+        {
+          "title": "Layout & UX",
+          "text": "Single-page, mobile-first design presenting event essentials upfront: date, time, timeline, and navigation buttons (Google Maps/Waze)."
+        },
+        {
+          "title": "Motion",
+          "text": "A smooth, infinite right-to-left text ticker created with JavaScript by measuring SVG asset width, duplicating content, and animating without visible gaps."
+        }
+      ],
+
+      "visual_presentation": [
+ 
+        {
+          "type": "palette",
+          "figcaption": "color palette",
+          "colors": [
+            { "name": "Vivid Green", "hex": "#54ff6f", "text": "#000000", "outline": null },
+            { "name": "Granite Purple", "hex": "#9e6eff", "text": "#000000", "outline": null }
+          ]
+        },
+        
+         {
+  "type": "type",
+  "figcaption": "typography",
+  "fonts": [
+    {
+      "font_name": "IBM Plex Sans Hebrew",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'IBM Plex Sans Hebrew', sans-serif",
+      
+      "sample_text": "אירוע חנוכת ראש השנה -גם חג וגם חנוכת בית ",
+      "note": ""                      
+    },
+{
+  "font_name": "Custom graffiti-style",
+  "mode": "image",
+  "image_src": "./src/event/tshpd.svg",
+  "image_alt": "Handmade graffiti heading type",
+  "sample_text": "כותרת דקורטיבית",
+  "note": "מותאם אישית"
+}
+  ]
+},
+        {
+          "type": "web_img",
+          "figcaption": "website",
+          "src": "./src/event/preview_event.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      ],
+
+      "finish_line": " Responsive one-page invitation that communicates key event details clearly, combining smooth motion elements with a unique visual style.",
+
+      "seo": {
+        "description": "Responsive web invitation blending Rosh Hashanah and housewarming themes, with custom graffiti typography, granite texture visuals, and a smooth infinite text ticker.",
+        "og_title": "Rosh Hashanah Housewarming Web Invite",
+        "og_type": "website"
+      }
+    },
+    {
+  "id": "WithPower",
+  "slug": "WithPower",
+  "title": "WithPower",
+  "nav_title": "WithPower",
+
+  "home": {
+    "show": true,
+    "order": 4,
+    "tools": ["ReactJS", "TailwindCSS", "Ladle.dev", "NodeJS"],
+    "summary": "Front-End Contributor | UI Developer Designer",
+    "preview": {
+      "src": "./src/withpower/withpower_preview.png",
+      "alt": "preview for UI refinements and components"
     }
+  },
+
+  "links": {
+    "site": "https://www.withpower.com/",
+    "repo": "",
+    "figma": ""
+  },
+
+  "dev_tools": ["ReactJS", "TailwindCSS", "Ladle.dev", "NodeJS"],
+  "design_tools": ["Figma"],
+
+  "short_description": {
+    "heading": "Worked remotely with a San Francisco–based product team on front-end development for a clinical trials platform. Focused on refining UI components in Tailwind CSS to match design mockups, improving accessibility and SEO with semantic HTML updates, and ensuring responsive, cross-browser performance — later contributing design elements.",
+    "role": "Front-End Contributor | UI Developer Designer",
+    "challenge": "Adapting and refining UI components in Tailwind CSS to match design mockups while ensuring responsive behavior, accessibility, and SEO improvements; later extended collaboration to design elements."
+  },
+
+  "process_solution": [
+    {
+      "title": "UI Development",
+      "text": "Implemented design refinements to match Figma mockups provided by the lead designer, with flexibility to adjust spacing, sizing, and layouts for responsiveness."
+    },
+    {
+      "title": "Responsive Layout & Cross-Browser Compatibility",
+      "text": "Ensured consistent rendering across desktop, tablet, and mobile devices, resolving layout issues and verifying cross-browser performance."
+    },
+    {
+      "title": "Semantic HTML & SEO",
+      "text": "Improved accessibility and SEO by restructuring the footer with semantic HTML; changes remain live on the production site."
+    },
+{
+  "title": "Design System & Components",
+  "text": "Integrated and tested Tailwind CSS components based on designer-provided mockups, implementing a reusable gradient library and texture images across multiple site sections. Additionally, assisted in updating existing design system variables in Figma to align with evolving project requirements."
+},
+    {
+      "title": "Extended Collaboration",
+      "text": "Following the initial project, continued working with the team on design-focused deliverables including a full-scale event poster wall and a template for their quarterly client newsletter."
+    }
+  ],
+
+  "visual_presentation": [
+    {
+          "type": "img",
+          "figcaption": "Responsive layout implementation in Tailwind CSS",
+          "src": "./src/withpower/ResponsiveLayout.png",
+          "alt": "Responsive layout across devices"
+        },
+    {
+          "type": "gallery",
+          "figcaption": "Gradient library integrated into the codebase",
+          "images": [
+            { "src": "./src/withpower/gradient1.png", "alt": "part of the gradient library" },
+            { "src": "./src/withpower/gradient2.png", "alt": "part of the gradient library" },
+            { "src": "./src/withpower/gradient3.png", "alt": "part of the gradient library" }
+          ]
+        },
+        {
+          "type": "img",
+          "figcaption": "Semantic HTML and SEO improvements in the footer",
+          "src": "./src/withpower/SemanticHTML_SEO.png",
+          "alt": "Semantic HTML & SEO"
+        }, 
+        {
+          "type": "img",
+          "figcaption": "Design system variables in Figma",
+          "src": "./src/withpower/FigmaVariables.png",
+          "alt": " Variables updated in Figma "
+        }
+  ],
+
+  "finish_line": "Contributed to front-end development and UI refinement for a live production platform, ensuring accessibility, responsiveness, and design consistency; maintained a working relationship for future design projects.",
+
+  "seo": {
+    "description": "Front-end collaboration for a San Francisco–based clinical trials platform. Contributed UI refinements in Tailwind CSS, improved accessibility and SEO, built reusable components, and maintained cross-browser responsiveness.",
+    "og_title": "Front-End Collaboration — Clinical Trials Platform",
+    "og_type": "website"
+  }
+}
+
   ]
 }

@@ -1,17 +1,29 @@
-# Personal Portfolio Website
+📌 Portfolio Website
+My portfolio website showcases selected work in Front-End Development and UI Design, serving as digital business card.
+It was designed and built from scratch using Figma, HTML, CSS, and JavaScript, with clean semantic code .
 
-This is my personal portfolio website, created as a beginner front-end developer.  
-The site is built to present my skills, work experience, and projects in a clean and responsive design.
+🎯 Project Goals
+Present selected projects in a clear and structured way.
+Highlight Front-End skills: HTML, CSS, JS, Grid, Flexbox.
+Demonstrate design thinking and user experience (UX/UI) abilities.
+Serve as a live project for my job application process.
 
-## Structure
-- **Home Page**: Contains an introduction about myself, my work experience, and a section showcasing the front-end projects I have worked on.
-- **Project Page**: Displays detailed information about each project.
+🖥 Technologies
+HTML5 – Semantic, accessible structure.
+CSS3 – Responsive design with Grid and Flexbox.
+JavaScript – Dynamic content loading from JSON.
+Git & GitHub – Version control and deployment.
 
-## Current Status
-The project is currently built as an HTML & CSS template, optimized for desktop, tablet, and mobile views.
+📂 Website Structure
+Home Page – Intro section , project showcase and profesional expirense.
+Project Pages – Each project includes images and description.
+Support Files – Separate CSS and JS files for maintainability.
 
-## Next Steps
-- Integrate project data using **JSON**.
-- Implement dynamic functionality with **JavaScript**.
+🚀 Key Features
+Dynamic project content loading.
+Fully responsive layout for all screen sizes.
+ֿSemantic markup.
+Easy scalability for adding future projects.
 
----
+📸 Preview
+![Site Preview](./protfolio_mockup.png)

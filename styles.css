@@ -164,6 +164,12 @@ display:flex ;
   font-weight: 500;
 }
 
+
+/*nav social link HEADER AREA COLOR BLUE*/
+.nav_social_link a{    margin-left: 1vw;
+    color: var(--shutdown-blue);
+    text-decoration: underline;
+}
 /* hero section */
 .hero{ 
     grid-area: hero;
@@ -505,7 +511,12 @@ footer .nav_site a{
     letter-spacing: 0.048rem;
     font-weight: 500;
 }
-
+/*nav social link HEADER AREA COLOR BLUE*/
+footer .nav_social_link a{    
+    color: var(--white);
+    letter-spacing: 0.02rem;
+  font-size: var(--text-14);
+}
 
 
 /*--------PROJECT PAGE---------*/
@@ -591,6 +602,7 @@ text-transform: uppercase;
   content: none;
 }
 
+
 .project_page .process_solution h2{
     font-size: var(--text-16);
     text-transform: uppercase;
@@ -603,6 +615,16 @@ font-size: var(--text-12);
     font-weight: 400;
     margin-bottom: 3.2vh;}
 
+.project_page  .visual_presentation .vis_gallery{
+     
+      flex-direction: row;
+ display: flex;
+ flex-wrap: wrap;
+}  
+.project_page  .visual_presentation .vis_gallery img {
+     
+max-width: 16vw;
+}  
 .visuals {
   display: grid;
   gap: 1.25rem;
@@ -620,7 +642,8 @@ font-size: var(--text-12);
 
 .visuals figure > figcaption {
     grid-area:title;
-     grid-column: 1;   align-self: center;  }
+     grid-column: 1;   
+     align-self: self-start;  }
 .visuals figure > .vis       { 
     grid-area:vis;
     grid-column: 2; 
@@ -638,6 +661,7 @@ display: flex;
 figcaption{
     font-size: var(--text-18);
     text-transform: uppercase;
+    line-height: 1.2;
 }
 .visuals img {
   max-height: 16.8rem; 
@@ -662,11 +686,15 @@ figcaption{
     flex-direction: column;
     align-items: flex-start;
 }
+.visuals figure > .vis.vis_type .font_example{
+    margin-bottom: 1.8vh;
+}
 /* שם הגופן נשאר בגופן הבסיס של האתר (יורש מה-body) */
 .vis_type .font_name {
   font-family: "IBM Plex Sans", sans-serif !important;
   font-weight: 300;
   line-height: 1.8;
+  font-size: var(--text-14);
 }
 
 /* הדוגמה לא מקבלת גופן קבוע ב-CSS.
@@ -823,6 +851,7 @@ flex-direction: column;
     margin-right: 0;
     margin-bottom: 1vh;
 }
+
 .project_page .finish_line p{
             font-size: var(--text-26);
         line-height: 1.62;
@@ -853,6 +882,13 @@ header{
 .logo span.square_black {
     padding: 0.18rem 0.14rem;
     }
+header .nav_social_link{
+    margin-top: 2.48vh;
+    font-size: var(--text-12);
+}    
+header .nav_social_link a{
+    margin-right: 2.8vw;
+}   
 .hero h1 {
 margin: 10.2vh 0 8.2vh;
       font-size: var(--text-32);
@@ -929,13 +965,21 @@ dt{
     font-size: var(--text-12);
     font-weight: 500;
     line-height: 2.4;
-    padding-inline-start: 0.6em; 
+    padding-inline-start: 0.8em; 
 }
 dd{
   font-size: var(--text-18);
 }
+footer{
+    flex-direction: column;
+    align-items: flex-start;
+}
 footer .logo {
-    font-size: 3.8vh;
+    font-size: 5.2vh;
+    margin-bottom: 2.8vh;
+}
+footer .nav_social_link{
+    margin-top: 1.6vh;
 }
 /*PROJECT PAGE*/
      .project_page ul {
