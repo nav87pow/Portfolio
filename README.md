@@ -8,6 +8,10 @@ Highlight Front-End skills: HTML, CSS, JS, Grid, Flexbox.
 Demonstrate design thinking and user experience (UX/UI) abilities.
 Serve as a live project for my job application process.
 
+📸 Preview
+![Site Preview](./protfolio_mockup.png)
+
+
 🖥 Technologies
 HTML5 – Semantic, accessible structure.
 CSS3 – Responsive design with Grid and Flexbox.
@@ -25,5 +29,10 @@ Fully responsive layout for all screen sizes.
 ֿSemantic markup.
 Easy scalability for adding future projects.
 
-📸 Preview
-![Site Preview](./protfolio_mockup.png)
+## License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.  
+You are free to download, use, and modify the source code, including for commercial purposes, provided that attribution is given to the original author.
+## Design Files
+The original design files for this project are available in Figma and are shared publicly under the same MIT License terms.  
+You may view and download them under the same MIT License terms:  
+[link here](https://www.figma.com/community/file/1537542547669411554/portfolio-starter-components-variables-docs)

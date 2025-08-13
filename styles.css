@@ -491,6 +491,10 @@ footer{
     padding: 4.2rem 6.2vw;
     background-color:var(--primary-blue) ;
     color: var(--white);
+        text-align: center;
+}
+footer .footer_site{
+margin-bottom: 6.2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -510,6 +514,13 @@ footer .nav_site a{
     color: var(--white);
     letter-spacing: 0.048rem;
     font-weight: 500;
+}
+footer  .open_source{
+  font-size: var(--text-14);
+}
+footer  .open_source a{
+  color: var(--white);
+  text-decoration: underline;
 }
 /*nav social link HEADER AREA COLOR BLUE*/
 footer .nav_social_link a{    
@@ -970,16 +981,21 @@ dt{
 dd{
   font-size: var(--text-18);
 }
-footer{
+footer .footer_site{
     flex-direction: column;
     align-items: flex-start;
+   
 }
+
 footer .logo {
     font-size: 5.2vh;
     margin-bottom: 2.8vh;
 }
 footer .nav_social_link{
     margin-top: 1.6vh;
+}
+footer .open_source{
+   text-align: start;
 }
 /*PROJECT PAGE*/
      .project_page ul {
