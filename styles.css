@@ -335,6 +335,7 @@ text-transform: capitalize;
   color: var(--deep-blue);
   font-size: var(--text-12);
   padding: 0.2rem 0.24rem;
+  margin-right: 0.325rem;
  }
  .project .preview {
   margin: 0;                 
@@ -595,6 +596,13 @@ text-transform: uppercase;
     text-transform: uppercase;
     margin-bottom: 4.2vh;
 }
+.project_page  .visual_presentation h2{
+font-size: var(--text-12);
+    text-transform: uppercase;
+    letter-spacing: 0.012rem;
+    font-weight: 400;
+    margin-bottom: 3.2vh;}
+
 .visuals {
   display: grid;
   gap: 1.25rem;
@@ -641,16 +649,32 @@ figcaption{
   max-height: 26.8rem; 
 }
 
+
 .visuals figure > .vis.vis_palette .color_tag{
   background-color: #262fd1;
   color: var(--white);
   padding: 0.375rem 0.24rem;  
   font-size: var(--text-14);
-  border: 1px solid var(--light-gray-blue);
+         margin-right: 1vh;
 }
-.visuals figure > .vis.vis_type .font_example{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.visuals figure > .vis.vis_type{    
+    flex-direction: column;
+    align-items: flex-start;
 }
+/* שם הגופן נשאר בגופן הבסיס של האתר (יורש מה-body) */
+.vis_type .font_name {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* הדוגמה לא מקבלת גופן קבוע ב-CSS.
+   ה-JS בלבד יגדיר כאן font-family דינאמי לפי הפרויקט. */
+.vis_type .font_example {
+  /* לא להגדיר כאן font-family */
+}
+
 
 /*finish line  section */
 .finish_line{
@@ -789,6 +813,16 @@ main.project_page > article > header {
 .project_page dd{
 font-size: var(--text-22);
 }
+
+.visuals figure > .vis.vis_palette{
+     align-items: stretch;
+    max-width: fit-content;
+flex-direction: column;
+}
+.visuals figure > .vis.vis_palette .color_tag{
+    margin-right: 0;
+    margin-bottom: 1vh;
+}
 .project_page .finish_line p{
             font-size: var(--text-26);
         line-height: 1.62;
@@ -894,7 +928,7 @@ grid-template-areas:
 dt{
     font-size: var(--text-12);
     font-weight: 500;
-            line-height: 2.4;
+    line-height: 2.4;
     padding-inline-start: 0.6em; 
 }
 dd{
@@ -904,30 +938,34 @@ footer .logo {
     font-size: 3.8vh;
 }
 /*PROJECT PAGE*/
-.project_page ul {
-    margin: 1vh 0;
- }
+     .project_page ul {
+        margin: 1vh 0;
+        }
      .project_page .short_description h2 {
         font-size: var(--text-18);
         line-height: 1.48;
-    }
-        .project_page dt {
+         }
+    .project_page dt {
         font-size: var(--text-10);
         }
-            .project_page dd {
+    .project_page dd {
         font-size: var(--text-16);
         margin-top: 1.8vh;
-        margin-bottom: 5.4vh;
-                    line-height: 1.68;
-            }
-            .visuals img {
-    max-height: 10.8rem;
-            }
-            figcaption {
-    font-size: var(--text-12);
-            }
-                .project_page .finish_line p {
+        margin-bottom: 5.4vh;        
+        line-height: 1.68;
+        }
+
+    .project_page  .visual_presentation h2{
+        font-size: var(--text-12);
+        }
+    .visuals img {
+        max-height: 10.8rem;
+        }
+    figcaption {
+        font-size: var(--text-12);
+        }
+    .project_page .finish_line p {
         font-size: var(--text-16);
         line-height: 1.62;
-                }
+       }
 }

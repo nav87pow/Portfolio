@@ -1,0 +1,187 @@
+{
+  "projects": [
+    {
+      "id": "zeus",
+      "slug": "zeus",
+      "title": "Zeus",
+      "nav_title": "Zeus",
+
+      "home": {
+        "show": true,
+        "order": 1,
+        "tools": ["HTML", "CSS"],
+        "summary": "Branding + single-page site for a low-voltage technician specializing in security cameras.",
+        "preview": {
+          "src": "./src/zeus/zeusPreview.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      },
+
+      "links": {
+        "site": "https://zeusfix.me",
+        "repo": "",
+        "figma": ""
+      },
+
+      "dev_tools": ["HTML", "CSS"],
+      "design_tools": ["Figma", "Illustrator", "Branding"],
+
+      "short_description": {
+        "heading": "A comprehensive branding and web development project for an independent low-voltage technician specializing in security cameras.",
+        "role": "Sole Creative Lead",
+        "challenge": "Create a cohesive brand identity that appeals to both homeowners and potential business clients."
+      },
+
+      "process_solution": [
+        {
+          "title": "Brand",
+          "text": "Concept around 'Zeus' to reference the electrical nature; bold, reliable typography with a subtle lightning motif."
+        },
+        {
+          "title": "Color & Aesthetics",
+          "text": "Blue for professionalism and trust; orange for energy and friendliness."
+        },
+        {
+          "title": "Marketing Materials",
+          "text": "Business cards, magnets, receipts, and camera stickers aligned to industry standards."
+        },
+        {
+          "title": "Website Development",
+          "text": "Minimalist single-page site with clear CTAs and quick-access WhatsApp/phone links."
+        }
+      ],
+
+      "visual_presentation": [
+        {
+          "type": "img",
+          "figcaption": "logo",
+          "src": "./src/zeus/logo_zeus.svg",
+          "alt": "Zeus logo with lightning-shaped letters"
+        },
+        {
+          "type": "gallery",
+          "figcaption": "icons",
+          "images": [
+            { "src": "./src/zeus/icon_zeus1.svg", "alt": "Icon with open eye and lightning-shaped beard" },
+            { "src": "./src/zeus/icon_zeus2.svg", "alt": "Lightning icon inspired from logo typography" }
+          ]
+        },
+        {
+          "type": "palette",
+          "figcaption": "brand palette",
+          "colors": [
+            { "name": "Zeus Blue", "hex": "#262FD1", "text": "#FFFFFF", "outline": null },
+            { "name": "Energy Orange", "hex": "#FF9B24", "text": "#000000", "outline": "#000000" }
+          ]
+        },
+        {
+          "type": "type",
+          "figcaption": "typography",
+          "font_name": "Inter",
+          "sample_text": "The quick brown fox jumps over the lazy dog — אבגדהוזחט",
+          "source": "google",
+          "font_family": "Inter, sans-serif",
+          "image": ""
+        },
+        {
+          "type": "web_img",
+          "figcaption": "website",
+          "src": "./src/zeus/zeusPreview.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      ],
+
+      "finish_line": "Delivered a cohesive, ready-to-use brand and a simple, effective site that supports daily operations and a professional presence.",
+
+      "seo": {
+        "description": "Branding + single-page site for a low-voltage technician specializing in security cameras.",
+        "og_title": "Zeus",
+        "og_type": "website"
+      }
+    },
+        {
+      "id": "rune",
+      "slug": "rune",
+      "title": "rune",
+      "nav_title": "rune",
+
+      "home": {
+        "show": true,
+        "order": 2,
+        "tools": ["React.js","HTML", "CSS"],
+        "summary": "Interactive Rune Reading App – An experimental personal project built with ReactJS, featuring dynamic data rendering and a custom CSS interface for a clean, engaging user experience.",
+        "preview": {
+          "src": "./src/rune/runemockuper.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      },
+
+      "links": {
+        "site": "https://runesletters.netlify.app",
+        "repo": "",
+        "figma": ""
+      },
+
+      "dev_tools": ["React.js","HTML", "CSS"],
+      "design_tools": ["Design Language", "Illustrator"],
+      "short_description": {
+        "heading": "A React.js single-page application inspired by the ancient art of rune casting. Users can “cast” a rune for an instant interpretation or explore the full rune library. With smooth random generation, intuitive navigation, and a clean, minimal UI, the experience keeps the focus on the symbolism behind each rune.",
+        "role": "Developer & UI Designer – built the application logic in ReactJS and created the visual design language, including color palette, typography, and layout.",
+        "challenge": "Translating symbolic rune meanings into an interactive, dynamic interface while keeping the design clean and intuitive."
+      },
+
+     "process_solution": [
+  {
+    "title": "Design Language",
+    "text": "A clean, quiet visual style using deep black and violet/blue tones to evoke subtle mysticism. The primary typeface, Space Grotesk, blends squared forms with rounded cuts, echoing the geometric-meets-organic nature of runic letters. Paired with Noto Sans Runic for authenticity and Libre Franklin for body text, the typography creates a cohesive and balanced reading experience."
+  },
+  {
+    "title": "Layout & UX",
+    "text": "A minimal, structured layout designed to present complex symbolic content in the simplest way possible. Each rune is shown first, followed by its core meaning, symbolic tags/icons, and an extended description for deeper exploration."
+  },
+  {
+    "title": "Website Development",
+    "text": "Built as a personal project during an Intro to React.js course at Internet Super High. Developed independently to practice React fundamentals, featuring random rune generation and smooth navigation."
+  },
+  {
+    "title": "Research",
+    "text": "Conducted a week-long study into runic letters to collect, synthesize, and adapt historical and symbolic information for a modern, interactive format."
+  }
+],
+
+      "visual_presentation": [
+    
+        {
+          "type": "palette",
+          "figcaption": "color palette",
+          "colors": [
+            { "name": "Deep mystical ", "hex": "#2e3442", "text": "#FFFFFF", "outline": "" }
+          ]
+        },
+       {
+  "type": "type",
+  "figcaption": "typography",
+  "font_name": "Space Grotesk",
+  "sample_text": "Quick brown fox jumps..ᚠᚢᚦᚨᚱᚲ",
+  "source": "google",
+  "font_family": "'Space Grotesk', sans-serif",
+  "image": ""
+},
+        {
+          "type": "web_img",
+          "figcaption": "website",
+          "src": "./src/rune/runemockuper.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      ],
+
+      "finish_line": "The project successfully combines creative visual design with hands-on React.js development, resulting in a clean, intuitive interface that reflects both the symbolic depth of runes and a modern user experience.",
+
+      "seo": {
+       "description": "Interactive single-page React.js app inspired by the ancient art of rune casting, featuring random rune draws, a full rune library, and a clean, minimal design.",
+  "og_title": "Interactive Rune Reading App",
+  "og_type": "website"
+      }
+    }
+  ]
+}
