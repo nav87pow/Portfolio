@@ -1,10 +1,9 @@
-// home.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const section = document.querySelector('section.projects');
   if (!section) return;
 
-  // לא נוגעים ב-.projects-header
-  // ננקה רק כרטיסים קיימים (article.project) אם יש דוגמה סטטית ב-HTML
+
   Array.from(section.querySelectorAll('article.project')).forEach(el => el.remove());
 
   fetch('./project.json', { cache: 'no-store' })
@@ -24,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const titleId = `p-${p.id}-title`;
   article.setAttribute('aria-labelledby', titleId);
 
-  // <a class="project" ...>  — עליו יושב ה-grid לפי ה-CSS שלך
+
   const link = document.createElement('a');
   link.className = 'project';
   link.href = `project.html?project=${encodeURIComponent(p.id)}`;
 
-  // header (grid-area: title)
+  // header 
   const header = document.createElement('header');
   header.style.gridArea = 'title';           // ← מיקום ב-grid
   header.style.display = 'flex';             // לשחזור ה-CSS
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   header.appendChild(h3);
   link.appendChild(header);
 
-  // ul.tools (grid-area: tools)
+
   if (p?.home?.tools && p.home.tools.length) {
     const ul = document.createElement('ul');
     ul.className = 'tools';
@@ -65,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.appendChild(ul);
   }
 
-  // p.summary (grid-area: desc)
+  // p.summary 
   if (p?.home?.summary) {
     const ps = document.createElement('p');
     ps.className = 'summary';
@@ -74,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.appendChild(ps);
   }
 
-  // figure.preview (grid-area: preview)
+  // figure.preview 
   const src = p?.home?.preview?.src;
   if (src) {
     const fig = document.createElement('figure');

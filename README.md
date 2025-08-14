@@ -19,6 +19,9 @@ CSS3 – Responsive design with Grid and Flexbox.
 JavaScript – Dynamic content loading from JSON.
 Git & GitHub – Version control and deployment.
 
+🤖 AI Assistance
+I utilized ChatGPT as a coding companion for assistance with JavaScript during the development process.
+
 📂 Website Structure
 Home Page – Intro section , project showcase and profesional expirense.
 Project Pages – Each project includes images and description.
