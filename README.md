@@ -20,7 +20,7 @@ JavaScript – Dynamic content loading from JSON.
 Git & GitHub – Version control and deployment.
 
 🤖 AI Assistance
-I utilized ChatGPT as a coding companion for assistance with JavaScript during the development process.
+I used ChatGPT as a coding companion to assist with JavaScript during the development process.
 
 📂 Website Structure
 Home Page – Intro section , project showcase and profesional expirense.
