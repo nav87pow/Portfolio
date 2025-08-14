@@ -332,7 +332,7 @@
     "tools": ["ReactJS", "TailwindCSS", "Ladle.dev", "NodeJS"],
     "summary": "Front-End Contributor | UI Developer Designer",
     "preview": {
-      "src": "./src/withpower/withpower_preview.png",
+      "src": "./src/withpower/LogoWithPOwer.png",
       "alt": "preview for UI refinements and components"
     }
   },

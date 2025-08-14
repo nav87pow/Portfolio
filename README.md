@@ -1,6 +1,7 @@
 📌 Portfolio Website
 My portfolio website showcases selected work in Front-End Development and UI Design, serving as digital business card.
 It was designed and built from scratch using Figma, HTML, CSS, and JavaScript, with clean semantic code .
+🔗 **Live Demo:** https://navdevdesign.netlify.app
 
 🎯 Project Goals
 Present selected projects in a clear and structured way.
@@ -9,7 +10,7 @@ Demonstrate design thinking and user experience (UX/UI) abilities.
 Serve as a live project for my job application process.
 
 📸 Preview
-![Site Preview](./protfolio_mockup.png)
+![Site Preview](./portfolio_mockup.png)
 
 
 🖥 Technologies
