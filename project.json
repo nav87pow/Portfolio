@@ -105,103 +105,109 @@
         "og_title": "Zeus",
         "og_type": "website"
       }
-    }, 
+    },
         {
-      "id": "Private Chef",
-      "slug": "Private Chef",
-      "title": "Private Chef",
-      "nav_title": "Private Chef",
+      "id": "Rune",
+      "slug": "Rune",
+      "title": "Rune",
+      "nav_title": "Rune",
 
       "home": {
         "show": true,
-        "order": 4,
-        "tools": ["HTML", "CSS", "JavaScript", "JSON"],
-        "summary": "A three-page site for a private chef offering high-end dishes in an accessible, app-inspired layout.",
+        "order": 2,
+        "tools": ["React.js","HTML", "CSS"],
+        "summary": "Interactive Rune Reading App – An experimental personal project built with ReactJS, featuring dynamic data rendering and a custom CSS interface for a clean, engaging user experience.",
         "preview": {
-          "src": "./src/--",
+          "src": "./src/rune/runemockuper.png",
           "alt": "preview for website desktop and mobile"
         }
       },
 
       "links": {
-        "site": "..soon upload",
+        "site": "https://runesletters.netlify.app",
         "repo": "",
         "figma": ""
       },
 
-      "dev_tools": ["HTML", "CSS", "JavaScript", "JSON"],
-      "design_tools": ["Figma", "Photoshop", "UI Strategy"],
+      "dev_tools": ["React.js","HTML", "CSS"],
+      "design_tools": ["Design Language", "Illustrator"],
       "short_description": {
-        "heading": "A website for a private chef showcasing pre-set, high-end dishes designed to be approachable and accessible to a broader audience The main challenge was to present gourmet-quality dishes without creating an intimidating or elitist impression. I suggested a mobile app-inspired layout to tap into familiar user behaviors and create a smooth, minimalist browsing experience. While the site includes just three core pages, the combination of thoughtful UX and dynamic content gives it the feel of a modern micro-app.",
-        "role": "Creative UI/UX Designer–Developer",
-        "challenge": "Communicate the value of chef-level dishes to a broad audience using a straightforward structure that avoids an upscale, intimidating tone."
+        "heading": "A React.js single-page application inspired by the ancient art of rune casting. Users can “cast” a rune for an instant interpretation or explore the full rune library. With smooth random generation, intuitive navigation, and a clean, minimal UI, the experience keeps the focus on the symbolism behind each rune.",
+        "role": "Developer & UI Designer – built the application logic in ReactJS and created the visual design language, including color palette, typography, and layout.",
+        "challenge": "Translating symbolic rune meanings into an interactive, dynamic interface while keeping the design clean and intuitive."
       },
-"process_solution": [
-  {
-    "title": "Defining the Challenge",
-    "text": "The chef offered pre-set high-end dishes and wanted to reach a broader audience without appearing elitist. The goal was to present the dishes in a friendly, accessible way."
-  },
-  {
-    "title": "Concept Development",
-    "text": "Created multiple visual directions based on client input and market analysis. Proposed an app-inspired layout to leverage familiar food-ordering behaviors."
-  },
-  {
-    "title": "Design & Structure",
-    "text": "Built a clean three-page site with clear navigation: homepage, package menu, and dish details. Used Grid and Flexbox for responsive layouts and JSON for dynamic content."
-  },
-  {
-    "title": "Adaptation & Expansion",
-    "text": "Mid-project, integrated a new section for sauces into the existing design without disrupting structure or style."
-  },
-  {
-  "title": "Design Language ",
-  "text": "Developed a cohesive visual language applied across the entire project — from the website interface and dish presentation cards to social media templates and other supporting elements. Created a plate photography guide and edited all food images for consistent color, framing, and style, ensuring visual harmony across all touchpoints."
-}
 
-],
-
-      "visual_presentation": [
+     "process_solution": [
   {
-    "type": "web_img",
-    "figcaption": "website preview",
-    "src": "./src/chef/chefPreview.png",
-    "alt": "Full site preview on desktop and mobile"
+    "title": "Design Language",
+    "text": "A clean, quiet visual style using deep black and violet/blue tones to evoke subtle mysticism. The primary typeface, Space Grotesk, blends squared forms with rounded cuts, echoing the geometric-meets-organic nature of runic letters. Paired with Noto Sans Runic for authenticity and Libre Franklin for body text, the typography creates a cohesive and balanced reading experience."
   },
   {
-    "type": "palette",
-    "figcaption": "color palette",
-    "colors": [
-       { "name": "Chef Spirit", "hex": "#9747FF", "text": "#F7F8FA", "outline": null },
-      { "name": "Soft Cream", "hex": "#F7F8FA", "text": "#2F1650", "outline": null },
-      { "name": "Deep Dark ", "hex": "#2F1650", "text": "#F7F8FA", "outline": null }
-     
-    ]
+    "title": "Layout & UX",
+    "text": "A minimal, structured layout designed to present complex symbolic content in the simplest way possible. Each rune is shown first, followed by its core meaning, symbolic tags/icons, and an extended description for deeper exploration."
   },
   {
-    "type": "type",
-    "figcaption": "typography",
-    "fonts": [
-      {
-        "font_name": "Fredoka",
-        "mode": "live",
-        "source": "google",
-        "font_family": "'Fredoka', serif",
-        "sample_text": "שף פרטי - אוכל מעורר נשמות ",
-        "note": "Used for both headings and body for a clean and neutral feel."
-      },
-          {
-        "font_name": "Arimo",
-        "mode": "live",
-        "source": "google",
-        "font_family": "'Arimo', serif",
-        "sample_text": "שף פרטי - אוכל מעורר נשמות ",
-        "note": "Used for both headings and body for a clean and neutral feel."
-      }
-    ]
+    "title": "Website Development",
+    "text": "Built as a personal project during an Intro to React.js course at Internet Super High. Developed independently to practice React fundamentals, featuring random rune generation and smooth navigation."
+  },
+  {
+    "title": "Research",
+    "text": "Conducted a week-long study into runic letters to collect, synthesize, and adapt historical and symbolic information for a modern, interactive format."
   }
 ],
 
-      "finish_line": "I transformed the chef׳s vision into a modern, app-like experience with a cohesive visual identity. This not only made high-end dishes more accessible and inviting but also ensured a visually harmonious, easy-to-navigate layout. As a result, the chef can now connect with a broader audience, encouraging them to explore and enjoy culinary excellence in an engaging way.",
+      "visual_presentation": [
+    
+        {
+          "type": "palette",
+          "figcaption": "color palette",
+          "colors": [
+            { "name": "Deep mystical ", "hex": "#2e3442", "text": "#FFFFFF", "outline": "" }
+          ]
+        },
+        {
+  "type": "type",
+  "figcaption": "typography",
+  "fonts": [
+    {
+      "font_name": "Space Grotesk",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Space Grotesk', sans-serif",
+      
+      "sample_text": "Rune-drawing experience..ᚠᚢᚦᚨᚱᚲ",
+      "note": ""                      
+    },
+        {
+      "font_name": "Noto Sans Runic",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Noto Sans Runic', sans-serif",
+      
+      "sample_text": "ᚠᚢᚦᚨᚱᚲ",
+      "note": ""                      
+    },
+           {
+      "font_name": "Libre Franklin",
+      "mode": "live",                
+      "source": "google",             
+      "font_family": "'Libre Franklin', sans-serif",
+      
+      "sample_text": "Simulates traditional rune-drawing",
+      "note": ""                      
+    }
+  ]
+},
+
+        {
+          "type": "web_img",
+          "figcaption": "website",
+          "src": "./src/rune/runemockuper.png",
+          "alt": "preview for website desktop and mobile"
+        }
+      ],
+
+      "finish_line": "The project successfully combines creative visual design with hands-on React.js development, resulting in a clean, intuitive interface that reflects both the symbolic depth of runes and a modern user experience.",
 
       "seo": {
        "description": "Interactive single-page React.js app inspired by the ancient art of rune casting, featuring random rune draws, a full rune library, and a clean, minimal design.",
@@ -406,7 +412,110 @@
     "og_title": "Front-End Collaboration — Clinical Trials Platform",
     "og_type": "website"
   }
+},
+  {
+      "id": "Private Chef",
+      "slug": "Private Chef",
+      "title": "Private Chef",
+      "nav_title": "Private Chef",
+
+      "home": {
+        "show": true,
+        "order": 4,
+        "tools": ["HTML", "CSS", "JavaScript", "JSON"],
+        "summary": "A three-page site for a private chef offering high-end dishes in an accessible, app-inspired layout.",
+        "preview": {
+          "src": "./src/--",
+          "alt": "preview for website desktop and mobile"
+        }
+      },
+
+      "links": {
+        "site": "..soon upload",
+        "repo": "",
+        "figma": ""
+      },
+
+      "dev_tools": ["HTML", "CSS", "JavaScript", "JSON"],
+      "design_tools": ["Figma", "Photoshop", "UI Strategy"],
+      "short_description": {
+        "heading": "A website for a private chef showcasing pre-set, high-end dishes designed to be approachable and accessible to a broader audience The main challenge was to present gourmet-quality dishes without creating an intimidating or elitist impression. I suggested a mobile app-inspired layout to tap into familiar user behaviors and create a smooth, minimalist browsing experience. While the site includes just three core pages, the combination of thoughtful UX and dynamic content gives it the feel of a modern micro-app.",
+        "role": "Creative UI/UX Designer–Developer",
+        "challenge": "Communicate the value of chef-level dishes to a broad audience using a straightforward structure that avoids an upscale, intimidating tone."
+      },
+"process_solution": [
+  {
+    "title": "Defining the Challenge",
+    "text": "The chef offered pre-set high-end dishes and wanted to reach a broader audience without appearing elitist. The goal was to present the dishes in a friendly, accessible way."
+  },
+  {
+    "title": "Concept Development",
+    "text": "Created multiple visual directions based on client input and market analysis. Proposed an app-inspired layout to leverage familiar food-ordering behaviors."
+  },
+  {
+    "title": "Design & Structure",
+    "text": "Built a clean three-page site with clear navigation: homepage, package menu, and dish details. Used Grid and Flexbox for responsive layouts and JSON for dynamic content."
+  },
+  {
+    "title": "Adaptation & Expansion",
+    "text": "Mid-project, integrated a new section for sauces into the existing design without disrupting structure or style."
+  },
+  {
+  "title": "Design Language ",
+  "text": "Developed a cohesive visual language applied across the entire project — from the website interface and dish presentation cards to social media templates and other supporting elements. Created a plate photography guide and edited all food images for consistent color, framing, and style, ensuring visual harmony across all touchpoints."
 }
+
+],
+
+      "visual_presentation": [
+  {
+    "type": "web_img",
+    "figcaption": "website preview",
+    "src": "./src/chef/chefPreview.png",
+    "alt": "Full site preview on desktop and mobile"
+  },
+  {
+    "type": "palette",
+    "figcaption": "color palette",
+    "colors": [
+       { "name": "Chef Spirit", "hex": "#9747FF", "text": "#F7F8FA", "outline": null },
+      { "name": "Soft Cream", "hex": "#F7F8FA", "text": "#2F1650", "outline": null },
+      { "name": "Deep Dark ", "hex": "#2F1650", "text": "#F7F8FA", "outline": null }
+     
+    ]
+  },
+  {
+    "type": "type",
+    "figcaption": "typography",
+    "fonts": [
+      {
+        "font_name": "Fredoka",
+        "mode": "live",
+        "source": "google",
+        "font_family": "'Fredoka', serif",
+        "sample_text": "שף פרטי - אוכל מעורר נשמות ",
+        "note": "Used for both headings and body for a clean and neutral feel."
+      },
+          {
+        "font_name": "Arimo",
+        "mode": "live",
+        "source": "google",
+        "font_family": "'Arimo', serif",
+        "sample_text": "שף פרטי - אוכל מעורר נשמות ",
+        "note": "Used for both headings and body for a clean and neutral feel."
+      }
+    ]
+  }
+],
+
+      "finish_line": "I transformed the chef׳s vision into a modern, app-like experience with a cohesive visual identity. This not only made high-end dishes more accessible and inviting but also ensured a visually harmonious, easy-to-navigate layout. As a result, the chef can now connect with a broader audience, encouraging them to explore and enjoy culinary excellence in an engaging way.",
+
+      "seo": {
+       "description": "Interactive single-page React.js app inspired by the ancient art of rune casting, featuring random rune draws, a full rune library, and a clean, minimal design.",
+  "og_title": "Interactive Rune Reading App",
+  "og_type": "website"
+      }
+    }
 
   ]
 }
