@@ -134,6 +134,7 @@ nav.nav_projects {/* btn project on hover in home page project navigation appear
     color:var(--primary-blue);
     margin: -0.12px;
     padding: 0.2rem;
+      white-space: nowrap;
    } 
    
    .projects_btn2nav:hover nav.nav_projects,
