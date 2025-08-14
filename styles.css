@@ -909,7 +909,7 @@ header .nav_social_link a{
     margin-right: 2.8vw;
 }   
 nav.nav_projects {
-  left: -4.2vw;
+  left: -6.2vw;
 }
 .hero h1 {
 margin: 10.2vh 0 8.2vh;
@@ -963,6 +963,7 @@ grid-template-areas:
    padding: 0.38rem 0.62rem;
    font-weight: 500;
    letter-spacing: 1px;
+   margin-bottom: 1vh;
      }
 .exp header a{
         margin-top: 1.2vh;

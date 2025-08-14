@@ -8,7 +8,7 @@
 
       "home": {
         "show": true,
-        "order": 1,
+        "order": 4,
         "tools": ["HTML", "CSS"],
         "summary": "Branding + single-page site for a low-voltage technician specializing in security cameras.",
         "preview": {
@@ -421,11 +421,11 @@
 
       "home": {
         "show": true,
-        "order": 4,
+        "order": 1,
         "tools": ["HTML", "CSS", "JavaScript", "JSON"],
         "summary": "A three-page site for a private chef offering high-end dishes in an accessible, app-inspired layout.",
         "preview": {
-          "src": "./src/--",
+          "src": "./src/chef/chef_preview.png",
           "alt": "preview for website desktop and mobile"
         }
       },
@@ -468,12 +468,7 @@
 ],
 
       "visual_presentation": [
-  {
-    "type": "web_img",
-    "figcaption": "website preview",
-    "src": "./src/chef/chefPreview.png",
-    "alt": "Full site preview on desktop and mobile"
-  },
+
   {
     "type": "palette",
     "figcaption": "color palette",
@@ -505,6 +500,12 @@
         "note": "Used for both headings and body for a clean and neutral feel."
       }
     ]
+  },
+   {
+    "type": "web_img",
+    "figcaption": "website preview",
+    "src": "./src/chef/chef_preview.png",
+    "alt": "Full site preview on desktop and mobile"
   }
 ],
 
