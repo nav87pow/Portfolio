@@ -55,14 +55,14 @@
         {
           "type": "img",
           "figcaption": "logo",
-          "src": "./src/zeus/logo_zeus.svg",
+          "src": "./src/zeus/logo_zeus.png",
           "alt": "Zeus logo with lightning-shaped letters"
         },
         {
           "type": "gallery",
           "figcaption": "icons",
           "images": [
-            { "src": "./src/zeus/icon_zeus1.svg", "alt": "Icon with open eye and lightning-shaped beard" },
+            { "src": "./src/zeus/icon.png", "alt": "Icon with open eye and lightning-shaped beard" },
             { "src": "./src/zeus/icon_zeus2.svg", "alt": "Lightning icon inspired from logo typography" }
           ]
         },
