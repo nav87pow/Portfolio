@@ -41,4 +41,3 @@ The original design files for this project are available in Figma and are shared
 You may view and download them under the same MIT License terms:  
 [link here](https://www.figma.com/community/file/1537542547669411554/portfolio-starter-components-variables-docs)
 
--
