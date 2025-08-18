@@ -239,6 +239,16 @@ margin-bottom: 1.32rem;
   /* border: 1px solid greenyellow;*/
 }
 
+aside.icon_area{
+    display: grid;
+    grid-template-rows: repeat(5, minmax(40px, 1fr));
+    gap: inherit;
+    justify-items: center;
+    align-content: space-evenly;
+    height: 100%;
+    grid-template-columns: 1fr;
+}
+
 /* skill section */
 .skill {
   grid-area:skill;
