@@ -26,6 +26,9 @@
 --text-12:0.75rem;
 --text-10:0.625rem;
 --text-8:0.5rem;
+
+    --overlay: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35));
+
 }
 html, body { overflow-x: hidden; }
 
@@ -283,7 +286,24 @@ grid-template-columns: repeat(4, minmax(0, 1fr));
   color: var(--primary-blue);
   margin-right:0.12rem ;
 }
-
+/**/
+.panel {
+  min-height: 100svh; /* עדיף svh במובייל */
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--overlay), var(--bg) center/cover no-repeat;
+}
+.panel .inner{
+  max-width: 900px;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: var(--deep-black);
+  will-change: transform;
+  /* פולבק: בלי תנועה אם reduce-motion */
+}
+/**/
 /* projects section */
 .projects {
     grid-area: projects;
