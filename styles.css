@@ -243,7 +243,7 @@ margin-bottom: 1.32rem;
 }
 
 aside.icon_area{
-    display: grid;
+    display: none;
     grid-template-rows: repeat(5, minmax(40px, 1fr));
     gap: inherit;
     justify-items: center;
