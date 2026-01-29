@@ -1,5 +1,7 @@
 {
   "projects": [
+
+
     {
       "id": "zeus",
       "slug": "zeus",
@@ -106,6 +108,127 @@
         "og_type": "website"
       }
     },
+        {
+  "id": "TCRB",
+  "slug": "TCRB",
+  "title": "TCRB",
+  "nav_title": "TCRB",
+
+  "home": {
+    "show": true,
+    "order": "",
+    "tools": ["ReactJS", "Vite", "TailwindCSS", "JavaScript"],
+    "summary": "Experimental frontend UI project focused on making forecasts for a rare astronomical event accessible through a clear, design-driven interface.",
+    "preview": {
+      "src": "./src/tcrb/tcrbmockuper.png",
+      "alt": "tcrb preview"
+    }
+  },
+
+  "links": {
+    "site": "https://tcrb.netlify.app",
+    "repo": "",
+    "figma": ""
+  },
+
+  "dev_tools": ["ReactJS", "Vite", "TailwindCSS", "JavaScript"],
+  "design_tools": ["Figma"],
+
+  "short_description": {
+"heading": "An experimental, short-scope frontend project (under 100 hours) combining design language definition with hands-on frontend coding, API integration, and UI logic to make forecasts for a rare astronomical phenomenon accessible.",    
+"role": "Sole Creative Lead",
+"challenge": "Making an uncertain and rarely occurring astronomical observation forecast understandable, credible, and approachable for a broad audience, while experimenting with frontend-oriented AI integration and external search APIs to process and present real-time information."  },
+
+  "process_solution": [
+    {
+      "title": "Concept & Design Language",
+      "text": "Defined a clear visual language for an experimental scientific interface, balancing credibility with approachability. The system was built to communicate uncertainty without overwhelming the user."
+    },
+    {
+      "title": "Data Sources & Filtering Logic",
+      "text": "Connected external search data(API) from Serper and Brave web sources. Articles are filtered through a closed, manually curated list of trusted publishers to ensure credibility."
+    },
+    {
+      "title": "Trust & Fallback Strategy",
+      "text": "When no recent trusted updates are available, the system guarantees the display of at least one reliable source to maintain informational continuity."
+    },
+    {
+      "title": "Forecast Detection",
+      "text": "AI-assisted logic scans filtered articles to detect precise forecast indicators. When a concrete forecast exists, the UI switches to a countdown state."
+    },
+    {
+      "title": "Conditional UI States",
+      "text": "If no precise forecast is found, the interface presents a waiting state, displaying the expected year of the event rather than speculative data."
+    },
+    {
+      "title": "User Entry & Location Handling",
+      "text": "Designed a flexible user flow allowing anonymous access or optional location-based consent. When location is approved, nearby recommended observation regions are shown."
+    }
+  ],
+
+  "visual_presentation": [
+    {
+      "type": "palette",
+      "figcaption": "core colors",
+      "colors": [
+        { "name": "Primary Purple", "hex": "#C27BFF", "text": "#FFFFFF", "outline": null },
+        { "name": "Secondary Yellow", "hex": "#FFDF1E", "text": "#000000", "outline": null }
+      ]
+    },
+    {
+      "type": "type",
+      "figcaption": "typography",
+      "fonts": [
+        {
+          "font_name": "Outfit",
+          "mode": "live",
+          "source": "google",
+          "font_family": "'Outfit', sans-serif",
+          "sample_text": "T Coronae Borealis ",
+          "note": ""
+        },
+        {
+          "font_name": "Poppins",
+          "mode": "live",
+          "source": "google",
+          "font_family": "'Poppins', sans-serif",
+          "sample_text": "T Coronae Borealis ",
+          "note": ""
+        },
+        {
+          "font_name": "Inter",
+          "mode": "live",
+          "source": "google",
+          "font_family": "'Inter', sans-serif",
+          "sample_text": "T Coronae Borealis ",
+          "note": ""
+        },
+        {
+          "font_name": "Noto Sans Symbols / Symbols 2",
+          "mode": "live",
+          "source": "google",
+          "font_family": "'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif",
+          "sample_text": "⚛",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "type": "web_img",
+      "figcaption": "website",
+      "src": "./src/tcrb/tcrbmockuper.png",
+      "alt": "preview for website desktop and mobile"
+    }
+  ],
+
+  "finish_line": "A focused experimental frontend project demonstrating how design systems, conditional UI states, and trust-based data presentation can be applied to uncertain scientific information within a short development timeframe.",
+
+  "seo": {
+    "description": "Frontend UI project for tracking potential forecasts of the rare astronomical event T Coronae Borealis, using trusted sources, conditional states, and a clear design language.",
+    "og_title": "TCRB – Experimental Frontend UI Project",
+    "og_type": "website"
+  }
+},
         {
       "id": "Rune",
       "slug": "Rune",
