@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // open and close the project navigtion
-     const btn = document.querySelector('.btn_projects');
+  const btn = document.querySelector('.btn_projects');
   const nav = document.querySelector('.nav_projects');
+  const currentProjectId = new URL(location.href).searchParams.get('project');
 
   if (btn && nav) {
     btn.addEventListener('click', (e) => {
@@ -37,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         a.textContent = p.nav_title || p.title || p.id;
         a.href = `project.html?project=${encodeURIComponent(p.id)}`;
         a.className = 'nav_project_link';
+        if (currentProjectId && p.id === currentProjectId) {
+          a.classList.add('project_selected');
+        }
         container.appendChild(a);
       });
     })

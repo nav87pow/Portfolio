@@ -136,12 +136,15 @@ nav.nav_projects {/* btn project on hover in home page project navigation appear
     border:1px solid var(--primary-blue);
     color:var(--primary-blue);
     margin: -0.12px;
-    padding: 0.2rem;
+    padding: 0.08rem 0.48rem;
       white-space: nowrap;
    } 
    
    .projects_btn2nav:hover nav.nav_projects,
    .projects_btn2nav:focus-within nav.nav_projects{/* btn project on hover in home page project navigation appear and get the hover focus for user interaction without disappearing */
+    display: flex;
+   }
+   .nav_projects.show{
     display: flex;
    }
    .projects_btn2nav:hover nav.nav_projects a{
@@ -161,12 +164,12 @@ nav.nav_projects {/* btn project on hover in home page project navigation appear
 .nav_projects.show a.project_selected{
   background-color: var(--primary-blue);
   color: var(--white);
-  border-color: var(--white);
-  font-weight: 500;
+  border: 2px solid var(--white);
+  font-weight: 800;
 }
 /*nav projects in PROJECT PAGE*/
 .header_project_page nav.nav_projects {
-display:flex ;
+display:none ;
 }
 .header_project_page nav.nav_projects a:hover {
   background-color: var(--primary-blue);
@@ -192,8 +195,21 @@ display:flex ;
      color: var(--primary-blue);
 }
 .text_blue_bg{
-     background-color: var(--deep-blue);
+     background-image: linear-gradient(var(--deep-blue), var(--deep-blue));
+     background-size: 0% 100%;
+     background-repeat: no-repeat;
+     background-position: left center;
+     color: var(--primary-blue);
+     transition: background-size 2s ease, color 0.6s ease;
+}
+.text_blue_bg.is-active{
+     background-size: 100% 100%;
      color: var(--white);
+}
+.exp h2 .text_blue_bg{
+     background-size: 100% 100%;
+     color: var(--white);
+     transition: none;
 }
 
 .hero h2{font-size:var(--text-48);line-height: 132%;}
